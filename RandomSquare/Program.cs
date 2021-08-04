@@ -10,10 +10,10 @@ namespace RandomSquare
         {
             Random random = new Random();
             List<int> randomNumList = new List<int>();
-            randomNumList.Add(random.Next(1, 50));
-            randomNumList.Add(random.Next(1, 50));
-            randomNumList.Add(random.Next(1, 50));
-            randomNumList.Add(random.Next(1, 50));
+            for (var i = 0; i <= 20; i++)
+            {
+                randomNumList.Add(random.Next(1, 50));
+            }
 
             Console.WriteLine("Here is the original randomNumList");
             foreach (var num in randomNumList)
